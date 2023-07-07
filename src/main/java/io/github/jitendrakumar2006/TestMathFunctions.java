@@ -49,6 +49,22 @@ public class TestMathFunctions {
         return a / b;
     }
 
+    /**
+     * Rem int.
+     *
+     * @param a the a
+     * @param b the b
+     * @return the int
+     */
+    public int rem(int a, int b) {
+        return a % b;
+    }
+
+    /**
+     * The entry point of application.
+     *
+     * @param args the input arguments
+     */
     public static void main(String[] args) {
         TestMathFunctions tmf = new TestMathFunctions();
         int sum30 = tmf.sum(10,20);
