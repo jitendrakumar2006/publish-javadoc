@@ -43,3 +43,16 @@ https://jitendrakumar2006.github.io/publish-javadoc/{v1}/javadoc/io/github/jiten
 https://jitendrakumar2006.github.io/publish-javadoc/{v2}/javadoc/io/github/jitendrakumar2006/TestMathFunctions.html
 
 
+
+Look at 
+https://oracle.github.io/opengrok/javadoc/ (there is no versioning of javadocs . its always seems latest).
+
+https://oracle.github.io/opengrok
+https://github.com/oracle/opengrok
+https://github.com/oracle/opengrok/tree/master/.github/workflows
+https://github.com/oracle/opengrok/tree/gh-pages
+
+https://docs.oracle.com/en-us/iaas/tools/java/3.18.0/ based on https://github.com/oracle/oci-java-sdk/releases/tag/v3.18.0
+https://docs.oracle.com/en-us/iaas/tools/python/2.105.0/ based https://github.com/oracle/oci-python-sdk/releases/tag/v2.105.0
+so oci java and python sdk also seems to be making the latest sdk javadoc available and not all the versions .
+
