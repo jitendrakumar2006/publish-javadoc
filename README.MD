@@ -32,7 +32,14 @@ commit the code with a maven based project . once the workflow "Deploy Javadoc" 
 4. now every time a commit on main branch will trigger the Deploy Javadoc, which will push the code javadoc branch . as there is a change in javadoc branch hence the pages will be rebuilt .
 
 Issues :
-how the javadoc will maintain the versioning .
+1. how the javadoc will maintain the versioning .
+current its overwriting earlier javadoc and always publishing to https://jitendrakumar2006.github.io/publish-javadoc/javadoc/io/github/jitendrakumar2006/TestMathFunctions.html
 
+2. need to check how can we publish https://jitendrakumar2006.github.io/publish-javadoc/javadoc/{v1}/io/github/jitendrakumar2006/TestMathFunctions.html
+https://jitendrakumar2006.github.io/publish-javadoc/javadoc/{v2}/io/github/jitendrakumar2006/TestMathFunctions.html
+
+or 
+https://jitendrakumar2006.github.io/publish-javadoc/{v1}/javadoc/io/github/jitendrakumar2006/TestMathFunctions.html
+https://jitendrakumar2006.github.io/publish-javadoc/{v2}/javadoc/io/github/jitendrakumar2006/TestMathFunctions.html
 
 
