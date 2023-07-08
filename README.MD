@@ -56,3 +56,27 @@ https://docs.oracle.com/en-us/iaas/tools/java/3.18.0/ based on https://github.co
 https://docs.oracle.com/en-us/iaas/tools/python/2.105.0/ based https://github.com/oracle/oci-python-sdk/releases/tag/v2.105.0
 so oci java and python sdk also seems to be making the latest sdk javadoc available and not all the versions .
 
+
+for publishing the javadoc version follow all above steps except workflow. Workflow has slight changes and is following (vatriable github.ref_name returns tag or branchname depending on what is triggering the workflow. below workflow only triggers on tagging i.e releases):
+
+name: Deploy Javadoc
+
+on:
+  push:
+   tags:
+      - '*'
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy JavaDoc
+        uses: MathieuSoysal/Javadoc-publisher.yml@v2.4.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.MY_PAT_GITHUB_TOKEN }}
+          javadoc-branch: javadoc
+          java-version: 17
+          target-folder: javadoc/${{github.ref_name}}
+          project: maven 
+		  
+		  
