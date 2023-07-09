@@ -1,4 +1,3 @@
-
 Follow https://github.com/marketplace/actions/deploy-publish-javadoc
 1. create repo
 2. add workflow  at main branch .github/workflows/publish-javadoc.yml
