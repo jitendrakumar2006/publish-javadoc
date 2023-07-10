@@ -2,9 +2,8 @@ name: Deploy Javadoc
 
 on:
   push:
-    branches:
-      - master
-      - main
+    tags:
+      - '*'
 
 jobs:
   publish:
@@ -16,5 +15,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.MY_PAT_GITHUB_TOKEN }}
           javadoc-branch: javadoc
           java-version: 17
-          target-folder: javadoc 
+          target-folder: javadoc/${{github.ref_name}}
           project: maven 
