@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"io.github.jitendrakumar2006","l":"Demo"},{"p":"io.github.jitendrakumar2006","l":"TestMathFunctions"}];updateSearchResults();
